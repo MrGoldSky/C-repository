@@ -5,15 +5,15 @@ int main()
 {
 	setlocale(LC_ALL, "rus");
 	int a, b, c;
-	std::cout << "Введите a";
+	std::cout << "Введите a: ";
 	std::cin >> a;
-	std::cout << "Введите b";
+	std::cout << "Введите b: ";
 	std::cin >> b;
-	std::cout << "Введите c";
+	std::cout << "Введите c: ";
 	std::cin >> c;
 
 	double p = (a + b + c) / 2;
-	
+
 	if ((a + b) > c) {
 		if ((a + c) > b) {
 			if ((c + b) > a) {
@@ -27,5 +27,6 @@ int main()
 	} else {
 		std::cout << "Треугольника не существует";
 	}
-
+	std::cin >> a;
 }
+
