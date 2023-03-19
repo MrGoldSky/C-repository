@@ -14,17 +14,10 @@ int main()
 
 	double p = (a + b + c) / 2;
 
-	if ((a + b) > c) {
-		if ((a + c) > b) {
-			if ((c + b) > a) {
-				std::cout << "Площадь равна = " << sqrt(p * (p - a) * (p - b) * (p - c));
-			} else {
-				std::cout << "Треугольника не существует";
-			}
-		} else {
-			std::cout << "Треугольника не существует";
-		}
-	} else {
+	if (((a + b) > c) and ((a + c) > b) and ((b + c) > a)) {
+		std::cout << "Площадь равна = " << sqrt(p * (p - a) * (p - b) * (p - c));
+	}
+	else {
 		std::cout << "Треугольника не существует";
 	}
 	std::cin >> a;
