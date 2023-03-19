@@ -5,12 +5,8 @@ int main()
 {
 	setlocale(LC_ALL, "rus");
 	int a, b, c;
-	std::cout << "Введите a: ";
-	std::cin >> a;
-	std::cout << "Введите b: ";
-	std::cin >> b;
-	std::cout << "Введите c: ";
-	std::cin >> c;
+	std::cout << "Введите a b c: ";
+	std::cin >> a >> b >> c;
 
 	double p = (a + b + c) / 2;
 
